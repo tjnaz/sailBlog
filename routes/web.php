@@ -19,3 +19,15 @@ Route::get(
         return view('posts');
     }
 );
+
+Route::get(
+    'post',
+    function () {
+        return view(
+            'post',
+            [
+            'post' => '<h1>Hello World!</h1>'
+            ]
+        );
+    }
+);
