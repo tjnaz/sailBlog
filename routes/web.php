@@ -21,12 +21,15 @@ Route::get(
 );
 
 Route::get(
-    'post',
-    function () {
+    'posts/{post}',
+    function ($slug) {
+        $path = __DIR__ . "/../resources/posts/{$slug}.html";
+        $post = file_get_contents($path);
+
         return view(
             'post',
             [
-            'post' => '<h1>Hello World!</h1>'
+            'post' => $post
             ]
         );
     }
