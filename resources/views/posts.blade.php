@@ -10,39 +10,8 @@
 
 <body>
     <article>
-        <h1><a href="/posts/my-first-post">My First Post</a></h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-            harum pariatur laboriosam animi ad veniam maiores fuga
-            laudantium provident eius qui, recusandae laborum possimus, eos
-            perferendis ullam unde minus iusto eligendi, ea repellendus
-            commodi. Ipsum, fuga eaque atque amet, veritatis aut vero at
-            error est laborum nobis nisi qui ducimus.
-        </p>
+        <?= $post; ?>
     </article>
-
-    <article>
-        <h1><a href="/posts/my-second-post">My Second Post</a></h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-            harum pariatur laboriosam animi ad veniam maiores fuga
-            laudantium provident eius qui, recusandae laborum possimus, eos
-            perferendis ullam unde minus iusto eligendi, ea repellendus
-            commodi. Ipsum, fuga eaque atque amet, veritatis aut vero at
-            error est laborum nobis nisi qui ducimus.
-        </p>
-    </article>
-
-    <article>
-        <h1><a href="/posts/my-third-post">My Third Post</a></h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-            harum pariatur laboriosam animi ad veniam maiores fuga
-            laudantium provident eius qui, recusandae laborum possimus, eos
-            perferendis ullam unde minus iusto eligendi, ea repellendus
-            commodi. Ipsum, fuga eaque atque amet, veritatis aut vero at
-            error est laborum nobis nisi qui ducimus.
-        </p>
     </article>
 </body>
 
