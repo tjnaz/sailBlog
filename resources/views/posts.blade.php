@@ -9,10 +9,11 @@
 </head>
 
 <body>
+    <?php foreach ($posts as $post) : ?>
     <article>
         <?= $post; ?>
     </article>
-    </article>
+    <?php endforeach; ?>
 </body>
 
 </html>
