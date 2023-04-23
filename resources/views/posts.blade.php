@@ -1,3 +1,9 @@
+---
+title: My Posts
+excerpt: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+date: 2023-04-21
+---
+
 <!DOCTYPE html>
 <html lang="en">
 

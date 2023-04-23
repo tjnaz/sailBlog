@@ -18,9 +18,11 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 Route::get(
     '/',
     function () {
-        $path = resource_path('posts/my-fourth-post.html');
+        $path = resource_path('posts/my-first-post.html');
         $document = YamlFrontMatter::parseFile($path);
-        ddd($document);
+
+        ddd($document -> title);
+
         // return view(
         //     'posts',
         //     [
@@ -33,11 +35,19 @@ Route::get(
 Route::get(
     'posts/{post}',
     function ($slug) {
+        $path = __DIR__ . "/../resources/posts/{$slug}.html";
+
+        if(!file_exists($path)) {
+            abort(404);
+        }
+
+        $post = file_get_contents($path);
+
         return view(
             'post',
             [
-            'post' => Post::find($slug)
+            'post' => $post
             ]
         );
     }
-) -> where('post', '[A-z_/-]+');
+);
